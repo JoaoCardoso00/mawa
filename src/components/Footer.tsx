@@ -7,7 +7,7 @@ import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
   {
-    title: 'Work',
+    title: 'Trabalhos',
     links: [
       { title: 'FamilyFund', href: '/work/family-fund' },
       { title: 'Unseal', href: '/work/unseal' },
@@ -23,7 +23,7 @@ const navigation = [
     ],
   },
   {
-    title: 'Company',
+    title: 'Empresa',
     links: [
       { title: 'About', href: '/about' },
       { title: 'Process', href: '/process' },
@@ -32,7 +32,7 @@ const navigation = [
     ],
   },
   {
-    title: 'Connect',
+    title: 'Connecte-se',
     links: socialMediaProfiles,
   },
 ]
@@ -82,18 +82,17 @@ function NewsletterForm() {
   return (
     <form className="max-w-sm">
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-        Sign up for our newsletter
+        Assine nossa Newsletter
       </h2>
       <p className="mt-4 text-sm text-neutral-700">
-        Subscribe to get the latest design news, articles, resources and
-        inspiration.
+        Receba as últimas notícias e atualizações diretamente no seu email.
       </p>
       <div className="relative mt-6">
         <input
           type="email"
-          placeholder="Email address"
+          placeholder="Endereço de email"
           autoComplete="email"
-          aria-label="Email address"
+          aria-label="Endereço de email"
           className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
         />
         <div className="absolute inset-y-1 right-1 flex justify-end">
