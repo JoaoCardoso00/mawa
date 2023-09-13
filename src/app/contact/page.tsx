@@ -24,7 +24,7 @@ function ContactDetails() {
 
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" /> */}
 
-      <Border className="mt-16 pt-16">
+      {/* <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Email us
         </h2>
@@ -46,11 +46,11 @@ function ContactDetails() {
             </div>
           ))}
         </dl>
-      </Border>
+      </Border> */}
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Follow us
+          Nos siga nas redes sociais
         </h2>
         <SocialMedia className="mt-6" />
       </Border>
