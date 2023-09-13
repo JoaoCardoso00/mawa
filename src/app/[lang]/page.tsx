@@ -15,9 +15,11 @@ import logoCria from '@/images/clients/cria/light.png'
 import logoMultiverse from '@/images/clients/multiverse/light.png'
 // import logoZenith from '@/images/clients/zenith/light.png'
 import logoZenithDark from '@/images/clients/zenith/dark.png'
+import { getDictionary } from '@/get-dictionary'
 import logoLapes from '@/images/clients/lapes/light.png'
 
 import imageLaptop from '@/images/laptop.jpg'
+import { Locale } from '@/i18n-config'
 
 const clients = [
   ['Cesupa', logoCesupa],
@@ -173,15 +175,20 @@ export const metadata: Metadata = {
     'We are a development studio working at the intersection of design and technology.',
 }
 
-export default async function Home() {
+type Params = {
+  lang: Locale
+}
+
+export default async function Home({ params: { lang } }: { params: Params }) {
   let caseStudies = (await loadCaseStudies()).slice(0, 3)
+  const dict = await getDictionary(lang)
 
   return (
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Nós construímos produtos digitais inovadores.
+            {dict.home.header}
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
             Na Mawa, dominamos a arte e a ciência do desenvolvimento de

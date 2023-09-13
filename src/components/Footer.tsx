@@ -6,22 +6,22 @@ import { Logo } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
 
 const navigation = [
-  {
-    title: 'Trabalhos',
-    links: [
-      // { title: 'FamilyFund', href: '/work/family-fund' },
-      // { title: 'Unseal', href: '/work/unseal' },
-      // { title: 'Phobia', href: '/work/phobia' },
-      // {
-      //   title: (
-      //     <>
-      //       See all <span aria-hidden="true">&rarr;</span>
-      //     </>
-      //   ),
-      //   href: '/work',
-      // },
-    ],
-  },
+  // {
+  //   title: 'Trabalhos',
+  //   links: [
+  //     // { title: 'FamilyFund', href: '/work/family-fund' },
+  //     // { title: 'Unseal', href: '/work/unseal' },
+  //     // { title: 'Phobia', href: '/work/phobia' },
+  //     // {
+  //     //   title: (
+  //     //     <>
+  //     //       See all <span aria-hidden="true">&rarr;</span>
+  //     //     </>
+  //     //   ),
+  //     //   href: '/work',
+  //     // },
+  //   ],
+  // },
   {
     title: 'Empresa',
     links: [
