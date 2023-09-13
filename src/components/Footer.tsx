@@ -9,26 +9,26 @@ const navigation = [
   {
     title: 'Trabalhos',
     links: [
-      { title: 'FamilyFund', href: '/work/family-fund' },
-      { title: 'Unseal', href: '/work/unseal' },
-      { title: 'Phobia', href: '/work/phobia' },
-      {
-        title: (
-          <>
-            See all <span aria-hidden="true">&rarr;</span>
-          </>
-        ),
-        href: '/work',
-      },
+      // { title: 'FamilyFund', href: '/work/family-fund' },
+      // { title: 'Unseal', href: '/work/unseal' },
+      // { title: 'Phobia', href: '/work/phobia' },
+      // {
+      //   title: (
+      //     <>
+      //       See all <span aria-hidden="true">&rarr;</span>
+      //     </>
+      //   ),
+      //   href: '/work',
+      // },
     ],
   },
   {
     title: 'Empresa',
     links: [
-      { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
-      { title: 'Contact us', href: '/contact' },
+      { title: 'Sobre nós', href: '/about' },
+      // { title: 'Processo', href: '/process' },
+      // { title: 'Blog', href: '/blog' },
+      { title: 'Entre em contato', href: '/contact' },
     ],
   },
   {

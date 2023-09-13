@@ -30,10 +30,10 @@ export function ContactForm() {
         }}
       >
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Work inquiries
+          Nos conte sobre o seu projeto
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" />
+          <TextInput label="Nome" name="name" autoComplete="name" />
           <TextInput
             label="Email"
             type="email"
@@ -41,27 +41,50 @@ export function ContactForm() {
             autoComplete="email"
           />
           <TextInput
-            label="Company"
+            label="Empresa"
             name="company"
             autoComplete="organization"
           />
-          <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
-          <TextInput label="Message" name="message" />
+          <TextInput
+            label="Telefone"
+            type="tel"
+            name="phone"
+            autoComplete="tel"
+          />
+          <TextInput label="Mensagem" name="message" />
           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
-              <legend className="text-base/6 text-neutral-500">Budget</legend>
+              <legend className="text-base/6 text-neutral-500">
+                Orçamento médio
+              </legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="$25K – $50K" name="budget" value="25" />
-                <RadioInput label="$50K – $100K" name="budget" value="50" />
-                <RadioInput label="$100K – $150K" name="budget" value="100" />
-                <RadioInput label="More than $150K" name="budget" value="150" />
+                <RadioInput
+                  label="R$ 2.000 – R$ 5.000"
+                  name="budget"
+                  value="25"
+                />
+                <RadioInput
+                  label="R$ 5.000 – R$ 10.000"
+                  name="budget"
+                  value="50"
+                />
+                <RadioInput
+                  label="R$ 10.000 – R$ 15.000"
+                  name="budget"
+                  value="100"
+                />
+                <RadioInput
+                  label="Mais que R$ 15.000"
+                  name="budget"
+                  value="150"
+                />
               </div>
             </fieldset>
           </div>
         </div>
       </form>
       <Button onClick={handleTest} className="mt-10">
-        Let’s work together
+        Vamos trabalhar juntos
       </Button>
     </FadeIn>
   )

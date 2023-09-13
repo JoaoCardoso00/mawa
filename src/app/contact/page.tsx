@@ -14,7 +14,7 @@ import { ContactForm } from '@/components/ContactForm'
 function ContactDetails() {
   return (
     <FadeIn>
-      <h2 className="font-display text-base font-semibold text-neutral-950">
+      {/* <h2 className="font-display text-base font-semibold text-neutral-950">
         Our offices
       </h2>
       <p className="mt-6 text-base text-neutral-600">
@@ -22,7 +22,7 @@ function ContactDetails() {
         addresses here for legal reasons.
       </p>
 
-      <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
+      <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" /> */}
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
@@ -59,15 +59,15 @@ function ContactDetails() {
 }
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
+  title: 'Entre em contato',
   description: 'Let’s work together. We can’t wait to hear from you.',
 }
 
 export default function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
-        <p>We can’t wait to hear from you.</p>
+      <PageIntro eyebrow="Entre em contato" title="Vamos trabalhar juntos">
+        <p>Não podemos esperar pra ouvir de você</p>
       </PageIntro>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">

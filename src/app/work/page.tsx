@@ -10,14 +10,11 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
-import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
+import logoCesupa from '@/images/clients/cesupa/light.png'
+import logoCria from '@/images/clients/cria/light.png'
+import logoMultiverse from '@/images/clients/multiverse/light.png'
+// import logoZenith from '@/images/clients/zenith/light.png'
+import logoLapes from '@/images/clients/lapes/light.png'
 import { formatDate } from '@/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
@@ -97,14 +94,10 @@ function CaseStudies({
 }
 
 const clients = [
-  ['Phobia', logoPhobia],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['Cesupa', logoCesupa],
+  ['Cria', logoCria],
+  ['Multiverse', logoMultiverse],
+  ['Lapes', logoLapes],
 ]
 
 function Clients() {
@@ -122,10 +115,10 @@ function Clients() {
           className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
         >
           {clients.map(([client, logo]) => (
-            <li key={client} className="group">
+            <li key={client.toString()} className="group">
               <FadeIn className="overflow-hidden">
                 <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image src={logo} alt={client.toString()} unoptimized />
                 </Border>
               </FadeIn>
             </li>
@@ -158,11 +151,11 @@ export default async function Work() {
         </p>
       </PageIntro>
 
-      <CaseStudies caseStudies={caseStudies} />
+      {/* <CaseStudies caseStudies={caseStudies} /> */}
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
+        client={{ name: 'Mail Smirk', logo: logoCesupa }}
       >
         We approached <em>Studio</em> because we loved their past work. They
         delivered something remarkably similar in record time.
